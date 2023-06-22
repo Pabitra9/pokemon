@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+body{
+    background-color: aquamarine;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+.left-contain,.right-contain{
+    flex-basis: 50%;
+}
+.left-contain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,0.5fr));
+    grid-gap: 4rem;
+}
+.card{
+    width: 320px;
+    background-color: rgb(255, 230, 0);
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.card>img{
+    width: 100px;
+}
+
+.right-contain{
+    width: 50%;
+    text-align: center;
+    color: rgb(21, 42, 40);
+    position: fixed;
+    top: 100px;
+    right: 20px;
+}
+.right-contain img{
+    margin: 1.5rem;
+    height: 250px;
+}
+
+.right-contain h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.abilities{
+    width: 50%;
+    margin: 0px 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* margin-top: 1rem; */
+    gap: 1rem;
+}
+.abilities .group{
+    background-color: red;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 13px;
+    border-radius: 0.5rem;
+}
+.base-stats{
+    margin: 1rem 0px;
+    text-align: center;
+}
+.btn{
+    display: flex;
+}
+.btn button{
+    outline: none;
+    border: none;
+    width: 100px;
+    padding: 0.5rem 0;
+    margin: 1rem;
+    background-color: red;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+
